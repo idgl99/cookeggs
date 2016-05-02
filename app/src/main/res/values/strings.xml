@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">eggs</string>
+    <string name="five_ways">Five ways to cook eggs</string>
+    <string name="hardboiled">Hard-Boiled</string>
+    <string name="fried">Fried</string>
+    <string name="poached">Poached</string>
+    <string name="scrambled">Scrambled</string>
+    <string name="omelet">Omelet</string>
+    <string name="recipe_scrambled">Scrambled eggs are both the easiest and the hardest version of eggs to make.
+There may not be any expert flipping or swirling involved, but one misstep
+and you could up with something bouncy and rubbery. To avoid that, you’ll want
+to keep the heat closer to low when attempting this style.
+It is recommended to stir them constantly over low-heat with a tablespoon of
+butter.
+
+You can also totally just toss your eggs directly into a hot pan and scramble
+them right there.
+If you do choose this method, make sure the pan doesn’t get too hot,
+and be attentive.
+It shouldn’t take you more than a minute or two.</string>
+    <string name="recipe_hardboiled">It’s important to flash the eggs in cold water after cooking them, because,
+that’s what prevents the eggs from getting grey.
+
+One excellent trick to keep in mind when boiling eggs is that the older they
+are, the easier it is to peel them.</string>
+    <string name="recipe_fried">You can add a fried egg to almost anything with guaranteed deliciousness.
+    It’s an excellent way to sneak a little extra protein into anything from
+    avocado toast to mixed greens to vegetable stir-frys.
+        When you’re ready to get frying, it’s important to remember one thing: don’t
+        ever let the pan get too hot. That’s when the egg starts to brown.
+        Eggs are the one protein on earth that don’t taste better when they’re brown.</string>
+        <string name="recipe_poached">All you need is a microwave and a mug and you’ve got a poached egg.
+Crack the egg into a mug and add a half cup of water so you don’t scramble it.
+Then cover the mug with a paper towel, and cook for one minute.
+Drain off the water, holding the egg back with a fork.</string>
+    <string name="recipe_omelet">If you choose to fill it up, make sure whatever you’re using gets a quick
+sauté before you add the eggs—you don’t want an omelet filled with raw veggies.
+From there, you can either dump the eggs directly onto the pan with the
+filling, or set the veggies aside and add them to the eggs later on, so that
+it’s more like a wrap.
+
+On the other hand, when it comes to a classic, filling-free omelet it’s all
+about the shaking and scrambling. This method will give you a really tender
+sheet of eggs, perfect for enjoying all on it’s own.
+</string>
+</resources>
