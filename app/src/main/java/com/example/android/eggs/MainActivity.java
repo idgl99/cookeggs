@@ -21,28 +21,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Context context = getApplicationContext();
-        /**
-         *  The remaining code produces a pop-up message
-         *  concerning whether or not the users device
-         *  is at least on Andoid level KitKat or later
-         */
-        int duration = Toast.LENGTH_SHORT;
-        int currentapiVersion = android.os.Build.VERSION.SDK_INT;
-        CharSequence text1 = "Your Android version is KitKat or later";
-        CharSequence text2 = "Your Android is earlier than KitKat";
-        Toast toast;
-        if (currentapiVersion >= Build.VERSION_CODES.KITKAT){
-            toast = Toast.makeText(context, (CharSequence) text1, duration);
-        } else {
-            toast = Toast.makeText(context, (CharSequence) text2, duration);
-        }
-            toast.show();
-    }
+     }
 
     /**
      *  method invoked when ImageButton "Scrambled" is clicked
      */
-    public void scrambled(View v) {
+    public void show_scrambled_recipe(View v) {
         Intent goToRecipe = new Intent();
         goToRecipe.setClass(this, RecipeActivity.class);
         String recipeText = getString(R.string.recipe_scrambled);
@@ -55,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  method invoked when ImageButton "Poached" is clicked
      */
-    public void poached(View v) {
+    public void show_poached_recipe(View v) {
         Intent goToRecipe = new Intent();
         goToRecipe.setClass(this, RecipeActivity.class);
         String recipeText = getString(R.string.recipe_poached);
@@ -68,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  method invoked when ImageButton "Hard-Boiled" is clicked
      */
-    public void hardboiled(View v) {
+    public void show_hardboiled_recipe(View v) {
         Intent goToRecipe = new Intent();
         goToRecipe.setClass(this, RecipeActivity.class);
         String recipeText = getString(R.string.recipe_hardboiled);
@@ -81,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  method invoked when ImageButton "Fried" is clicked
      */
-    public void fried(View v) {
+    public void show_fried_recipe(View v) {
         Intent goToRecipe = new Intent();
         goToRecipe.setClass(this, RecipeActivity.class);
         String recipeText = getString(R.string.recipe_fried);
@@ -94,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      *  method invoked when ImageButton "Omelet" is clicked
      */
-    public void omelet(View v) {
+    public void show_omelet_recipe(View v) {
         Intent goToRecipe = new Intent();
         goToRecipe.setClass(this, RecipeActivity.class);
         String recipeText = getString(R.string.recipe_omelet);
