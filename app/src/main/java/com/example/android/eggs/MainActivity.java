@@ -21,72 +21,47 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Context context = getApplicationContext();
-     }
-
-    /**
-     *  method invoked when ImageButton "Scrambled" is clicked
-     */
-    public void show_scrambled_recipe(View v) {
-        Intent goToRecipe = new Intent();
-        goToRecipe.setClass(this, RecipeActivity.class);
-        String recipeText = getString(R.string.recipe_scrambled);
-        goToRecipe.putExtra("recipe", recipeText);
-        String headingText = getString(R.string.scrambled);
-        goToRecipe.putExtra("heading", headingText);
-        startActivity(goToRecipe);
     }
-
     /**
-     *  method invoked when ImageButton "Poached" is clicked
+     * method HandleClick is invoked by all ImageButtons clicks
+     * using a switch statement the relevant recipe and heading texts
+     * are extracted and placed in Strings recipeText and headingText
+     * these Strings are then passed to the RecipeActivity class with
+     * putExtra
+     *
      */
-    public void show_poached_recipe(View v) {
+    public void HandleClick(View view) {
         Intent goToRecipe = new Intent();
         goToRecipe.setClass(this, RecipeActivity.class);
-        String recipeText = getString(R.string.recipe_poached);
-        goToRecipe.putExtra("recipe", recipeText);
-        String headingText = getString(R.string.poached);
-        goToRecipe.putExtra("heading", headingText);
-        startActivity(goToRecipe);
-    }
+        String recipeText = "";
+        String headingText = "";
+        // Check the ImageButton id and update recipeText and headingText Strings
+        switch (view.getId()) {
+            case R.id.imageHardboiled:
+                recipeText = getString(R.string.recipe_hardboiled);
+                headingText = getString(R.string.hardboiled);
+                break;
+            case R.id.imageFried:
+                recipeText = getString(R.string.recipe_fried);
+                headingText = getString(R.string.fried);
+                break;
+            case R.id.imageScrambled:
+                recipeText = getString(R.string.recipe_scrambled);
+                headingText = getString(R.string.scrambled);
+                break;
+            case R.id.imagePoached:
+                recipeText = getString(R.string.recipe_poached);
+                headingText = getString(R.string.poached);
+                break;
+            case R.id.imageOmelet:
+                recipeText = getString(R.string.recipe_omelet);
+                headingText = getString(R.string.omelet);
+                break;
+            default:
 
-    /**
-     *  method invoked when ImageButton "Hard-Boiled" is clicked
-     */
-    public void show_hardboiled_recipe(View v) {
-        Intent goToRecipe = new Intent();
-        goToRecipe.setClass(this, RecipeActivity.class);
-        String recipeText = getString(R.string.recipe_hardboiled);
+        }
         goToRecipe.putExtra("recipe", recipeText);
-        String headingText = getString(R.string.hardboiled);
-        goToRecipe.putExtra("heading", headingText);
-        startActivity(goToRecipe);
-    }
-
-    /**
-     *  method invoked when ImageButton "Fried" is clicked
-     */
-    public void show_fried_recipe(View v) {
-        Intent goToRecipe = new Intent();
-        goToRecipe.setClass(this, RecipeActivity.class);
-        String recipeText = getString(R.string.recipe_fried);
-        goToRecipe.putExtra("recipe", recipeText);
-        String headingText = getString(R.string.fried);
-        goToRecipe.putExtra("heading", headingText);
-        startActivity(goToRecipe);
-    }
-
-    /**
-     *  method invoked when ImageButton "Omelet" is clicked
-     */
-    public void show_omelet_recipe(View v) {
-        Intent goToRecipe = new Intent();
-        goToRecipe.setClass(this, RecipeActivity.class);
-        String recipeText = getString(R.string.recipe_omelet);
-        goToRecipe.putExtra("recipe", recipeText);
-        String headingText = getString(R.string.omelet);
         goToRecipe.putExtra("heading", headingText);
         startActivity(goToRecipe);
     }
 }
-
-

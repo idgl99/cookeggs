@@ -17,7 +17,7 @@
         android:textStyle="bold" />
 
     <ImageButton
-        android:onClick="show_hardboiled_recipe"
+        android:onClick="HandleClick"
         android:background="#FFFFFF"
         android:id="@+id/imageHardboiled"
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:onClick="show_fried_recipe"
+                android:onClick="HandleClick"
                 android:background="#FFFFFF"
                 android:id="@+id/imageFried"
                 android:layout_width="match_parent"
@@ -71,7 +71,7 @@
                 android:textStyle="bold" />
 
             <ImageButton
-                android:onClick="show_poached_recipe"
+                android:onClick="HandleClick"
                 android:background="#FFFFFF"
                 android:id="@+id/imagePoached"
                 android:layout_width="match_parent"
@@ -101,7 +101,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:onClick="show_scrambled_recipe"
+                android:onClick="HandleClick"
                 android:background="#FFFFFF"
                 android:id="@+id/imageScrambled"
                 android:layout_width="match_parent"
@@ -124,7 +124,7 @@
 
 
             <ImageButton
-                android:onClick="show_omelet_recipe"
+                android:onClick="HandleClick"
                 android:background="#FFFFFF"
                 android:id="@+id/imageOmelet"
                 android:layout_width="match_parent"

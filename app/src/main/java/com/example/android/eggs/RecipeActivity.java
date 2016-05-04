@@ -1,11 +1,5 @@
 package com.example.android.eggs;
 
-/*
- * RecipeActivity is invoked when any of the five ImageViews in
- * the MainActivity is clicked.  It displays the corresponding
- * recipe.
- */
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +9,11 @@ import android.widget.TextView;
 
 import com.example.android.eggs.R;
 
+/**
+ * the text in the recipeheading and recipebody TextViews are
+ * updated with the stringExtra parameters "recipe" and "heading"
+ * passed from MainActivity
+ */
 
 public class RecipeActivity extends AppCompatActivity {
     @Override
